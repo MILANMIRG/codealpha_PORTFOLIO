@@ -1271,9 +1271,15 @@ margin-left: auto;
         padding: 96px 10vw 96px 10vw;
     }
 
-
     /*---------projects-section-ends--------*/
 
+    /*---------certificates-section--------*/
+
+    .hero-certificates-section{
+        padding: 96px 10vw 96px 10vw;
+    }
+    
+    /*---------certificates-section-ends--------*/
 }
 
 @media only screen and (max-width: 450px){
@@ -1315,7 +1321,6 @@ margin-left: auto;
     
 
     /*---------projects-section--------*/
-
     .projects-container-child-head-bio-active{
         font-size: .75rem;
     }
@@ -1325,7 +1330,7 @@ margin-left: auto;
     /*---------projects-section-ends--------*/
 
     /*---------certifications-section--------*/
-
+    
     /*---------certifications-section-ends-------*/
 }
 
