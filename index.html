@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MILAN PORTFOLIO</title>
+    <link rel="icon" type="image/x-icon" href="DATA\favicon.png">
+</head>
+<body>
+
+<!-- 🔹 Fullscreen Popup -->
+<div id="popup" class="popup-overlay" onclick="closePopup()">
+    <div class="popup-content" onclick="event.stopPropagation()">
+    <span class="close-btn" onclick="closePopup()">×</span>
+    <div id="popup-data"></div>
+    </div>
+</div>
+
+<!--NAVBAR-->
+    <div class="nav-bar">
+        <div class="nav-bar-items-left">
+            <span class="nav-bar-items-left-symbol"><</span>
+            <span id="name">Milan</span>
+            <span class="nav-bar-items-left-symbol">/ ></span>
+        </div>
+
+        <div class="nav-bar-items">
+            <a href="#about" class="nav-bar-links">About</a>
+            <a href="#skills" class="nav-bar-links">Skills</a>
+            <a href="#education" class="nav-bar-links">Education</a>
+            <a href="#projects" class="nav-bar-links">Projects</a>
+            <a href="#certificates" class="nav-bar-links">Certificates</a>
+           
+        </div>
+
+        <div class="nav-bar-items-right">
+            <i class="fa-brands fa-github nav-bar-items-right-icon-1"></i>   
+            <i class="fa-brands fa-linkedin-in nav-bar-items-right-icon-2"></i>    
+            <i id="menu-icon" class="fa-solid fa-bars nav-bar-items-right-icon-3" onclick="toggleMenu()"></i>
+            <i id="close-icon" class="fa-solid fa-xmark nav-bar-items-right-icon-3" onclick="toggleMenu()" style="display: none;"></i>
+        </div>
+    </div>
+    <div id="sidebar" class="sidebar">
+        <a href="#about" onclick="toggleMenu()" class="nav-bar-sidebar-links">About</a>
+        <a href="#skills" onclick="toggleMenu()" class="nav-bar-sidebar-links">Skills</a>
+        <a href="#education" onclick="toggleMenu()" class="nav-bar-sidebar-links">Education</a>
+        <a href="#projects" onclick="toggleMenu()" class="nav-bar-sidebar-links">Projects</a>
+        <a href="#certificates" onclick="toggleMenu()" class="nav-bar-sidebar-links">Certificates</a>
+    </div>
+<!--NAVBAR-ENDS--> 
+
+<!--ABOUT-SECTION--> 
+<section class="about-section section" id="about">
+    <div class="blurred-blob-div"><div class="blurred-blob"></div></div>
+    <div class="grid-overlay"></div>
+    <div class="hero-about-section">
+        <div class="hero-about-section-left-2">
+            <div class="profile-container" id="profileContainer">
+                <img src="profile.png" alt="Profile" class="profile-image">
+            </div> 
+        </div>
+        <div class="hero-about-section-left">
+            <div class="hero-about-section-name1">Hi, I am</div>
+            <div class="hero-about-section-name2">MILAN</div>
+            <div class="hero-about-section-name3">
+                <div class="hero-about-section-name4a">I am a &nbsp</div>
+                <div class="hero-about-section-name4"><span id="typing-text"></span><span id="cursor">|</span></span></div>
+            </div>
+            <div class="hero-about-section-bio">
+                I’m a B.Tech CSE student at Dronacharya College of Engineering with a passion for Web Development.<br> I enjoy building functional, user-friendly websites using technologies like HTML, CSS, JavaScript, and React.<br> Always eager to learn and grow, I aim to contribute to impactful web projects.            </div>
+            <div class="download-cv-button-div">
+                <a id="download-cv-button" href="https://milanmirg.github.io/RESUME/" target="_blank" rel="noopener noreferrer">
+                    DOWNLOAD CV
+                </a>  
+            </div>       
+        </div>
+        <div class="hero-about-section-right">
+            <div class="profile-container" id="profileContainer">
+                <img src="profile.png" alt="Profile" class="profile-image">
+            </div>                         
+        </div>
+    </div>
+</section>
+<!--ABOUT-SECTION-ENDS--> 
+
+ <!--SKILLS-SECTION--> 
+ <section class="skills-section section" id="skills">
+    <div class="hero-skills-section">
+        <div class="hero-skills-section-heading hero-section-heading">
+                SKILLS
+        </div>
+        <div class="hero-skills-section-underline underline">  </div>
+        <div class="hero-skills-section-paragraph hero-section-paragraph"> 
+            A collection of my technical skills and expertise gained through various projects and experiences       
+        </div>
+        <div class="skills-container-box">
+
+            <div class="skills-frontend-container skills-container">
+                
+                <div class="skills-container-heading">Frontend</div>
+                
+                <div class="skills-container-child">
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\html.png">
+                        </div>
+                        <div class="skills-items-text">
+                            HTML
+                        </div>
+                    </div>
+                    
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\css.png">
+                        </div>
+                        <div class="skills-items-text">
+                            CSS
+                       </div>
+                    </div>
+                
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\javascript.png">
+                        </div>
+                        <div class="skills-items-text">
+                            JavasScript
+                        </div>
+                    </div>
+                
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\react.png">
+                        </div>
+                        <div class="skills-items-text">
+                            React JS
+                        </div>
+                    </div>
+                
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\angular.png">
+                        </div>
+                        <div class="skills-items-text">
+                            Angular
+                        </div>
+                </div>
+                
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\nextjs.png">
+                        </div>
+                        <div class="skills-items-text">
+                            Next JS
+                        </div>
+                    </div>
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\tailwindcss.png">
+                        </div>
+                        <div class="skills-items-text">
+                            Tailwind CSS
+                        </div>
+                    </div>
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\bootstrap.png">
+                        </div>
+                        <div class="skills-items-text">
+                            Bootstrap
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-backend-container skills-container">
+                
+                <div class="skills-container-heading">Backend</div>
+                
+                <div class="skills-container-child">
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\mysql.png">
+                        </div>
+                        <div class="skills-items-text">
+                            MySQL
+                        </div>
+                    </div>
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\mongodb.png">
+                        </div>
+                        <div class="skills-items-text">
+                            MongoDB
+                        </div>
+                    </div>
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\nodejs.png">
+                        </div>
+                        <div class="skills-items-text">
+                            Node JS
+                        </div>
+                    </div>
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\firebase.png">
+                        </div>
+                        <div class="skills-items-text">
+                            Firebase
+                        </div>
+                    </div>
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\springboot.png">
+                        </div>
+                        <div class="skills-items-text">
+                            Springboot
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-languages-container skills-container">
+                
+                <div class="skills-container-heading">Languages</div>
+                
+                <div class="skills-container-child">
+
+                <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\c.png">
+                        </div>
+                        <div class="skills-items-text">
+                            C
+                        </div>
+                    </div>
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\cpp.png">
+                        </div>
+                        <div class="skills-items-text">
+                            C++
+                        </div>
+                    </div>
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\python.png">
+                        </div>
+                        <div class="skills-items-text">
+                            Python
+                        </div>
+                    </div>
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\java.png">
+                        </div>
+                        <div class="skills-items-text">
+                            Java
+                        </div>
+                    </div>
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\typescript.png">
+                        </div>
+                        <div class="skills-items-text">
+                            TypeScript
+                        </div>
+                    </div>
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\javascript.png">
+                        </div>
+                        <div class="skills-items-text">
+                            JavaScript
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="skills-tools-container skills-container">
+                
+                <div class="skills-container-heading">Tools</div>
+               
+                <div class="skills-container-child">
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\vscode.png">
+                        </div>
+                        <div class="skills-items-text">
+                            VS Code
+                        </div>
+                    </div>
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\github.png">
+                        </div>
+                        <div class="skills-items-text">
+                            GitHub
+                        </div>
+                    </div>
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\git.png">
+                        </div>
+                        <div class="skills-items-text">
+                            Git
+                        </div>
+                    </div>
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\photoshop.png">
+                        </div>
+                        <div class="skills-items-text">
+                            Photoshop
+                        </div>
+                    </div>
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\coreldraw.png">
+                        </div>
+                        <div class="skills-items-text">
+                            CorelDRAW
+                        </div>
+                    </div>
+
+                    <div class="skills-items">
+                        <div class="skills-items-logo-container">
+                            <img class="skills-items-logo" src="DATA\LOGO\canva.png">
+                        </div>
+                        <div class="skills-items-text">
+                            Canva
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="skills-end">
+        <div class="skills-end-left"></div>
+        <div class="skills-end-right"></div>
+    </div>
+</section>
+<!--SKILLS-SECTION-ENDS--> 
+
+<!--EDUCATION-SECTION--->
+
+<section class="education-section section" id="education">
+
+    <div class="hero-education-section">
+
+        <div class="hero-education-section-heading hero-section-heading">
+          EDUCATION
+        </div>
+
+        <div class="hero-education-section-underline underline">  </div>
+
+        <div class="hero-education-section-paragraph hero-section-paragraph"> 
+            My education has been a journey of learning and development. Here are the details of my academic background 
+        </div>
+
+        <div class="education-box">
+
+            <div class="education-line">
+            </div>
+
+            <div class="education-container">
+                <div class="education-container-child education-container-child-right">
+                    <div class="education-container-child-head">
+                        <div class="education-container-child-head-logo-container">
+                            <img class="education-container-child-head-logo" src="DATA/LOGO/gulogo.png">
+                        </div>
+                        <div class="education-container-child-head-heading">
+                            <div class="education-container-child-head-heading-course">
+                                Bachelor of Technology - B.Tech (CSE)
+                            </div>
+                            <div class="education-container-child-head-heading-place">
+                                DRONACHARYA COLLEGE OF ENGINEERING , GURGAON  
+                            </div>
+                            <div class="education-container-child-head-heading-year">
+                                2024-2028
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-container-child-grade">
+                        PERSUING
+                    </div>
+                    <div class="education-container-child-bio">
+                        I am currently pursuing a B.Tech in Computer Science and Engineering from Dronacharya College of Engineering, Khentawas, Farrukhnagar, Gurugram, affiliated with Gurugram University. Here, I am deepening my expertise in areas such as programming, algorithms, data structures, software development, and web development. The program is strengthening my problem-solving abilities and providing hands-on experience with modern technologies, building on the academic foundation I established during my school years with a focus on Computer Science.                   
+                     </div>
+                </div>
+                <div class="education-logo-container">
+                    <img class="education-logo" src="DATA/LOGO/gulogo.png">
+                </div>
+            </div>
+
+            <div class="education-container">
+                <div class="education-container-child education-container-child-left">
+                    <div class="education-container-child-head">
+                        <div class="education-container-child-head-logo-container">
+                            <img class="education-container-child-head-logo" src="DATA/LOGO/cbselogo.png">
+                        </div>
+                        <div class="education-container-child-head-heading">
+                            <div class="education-container-child-head-heading-course">
+                                Class XII (Higher Secondary – PCM with Computer Science)
+                            </div>
+                            <div class="education-container-child-head-heading-place">
+                                EURO INTERNATIONAL SCHOOL SEC-10 , GURGAON    
+                            </div>
+                            <div class="education-container-child-head-heading-year">
+                                2022-2024
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-container-child-grade">
+                        Grade:72%
+                    </div>
+                    <div class="education-container-child-bio">
+                        I completed my Class 12 education from Euro International School, Sec 10, Gurgaon, under the CBSE board, with a focus on the Science stream, including Physics, Chemistry, Mathematics (PCM), and Computer Science. This curriculum honed my analytical thinking and introduced me to programming, further sparking my interest in the tech field and laying a solid foundation for my pursuit of a career in Computer Science.                   
+                     </div>
+                </div>
+                <div class="education-logo-container">
+                    <img class="education-logo" src="DATA/LOGO/cbselogo.png">
+                </div>
+            </div>
+
+            <div class="education-container">
+                <div class="education-container-child education-container-child-right">
+                    <div class="education-container-child-head">
+                        <div class="education-container-child-head-logo-container">
+                            <img class="education-container-child-head-logo" src="DATA/LOGO/cbselogo.png">
+                        </div>
+                        <div class="education-container-child-head-heading">
+                            <div class="education-container-child-head-heading-course">
+                                Class X (Secondary with Computer Application)
+                            </div>
+                            <div class="education-container-child-head-heading-place">
+                                EURO INTERNATIONAL SCHOOL SEC-10 , GURGAON    
+                            </div>
+                            <div class="education-container-child-head-heading-year">
+                                2021-2022
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-container-child-grade">
+                        Grade:82%
+                    </div>
+                    <div class="education-container-child-bio">
+                        I completed my Class 10 education from Euro International School, Sec 10, Gurgaon, under the CBSE board, where I studied core subjects such as English, Hindi, Science, Social Science (SST), and Computer Application. My focus on Computer Application enhanced my technical skills and provided a strong foundation in programming and technology.                    
+                    </div>
+                </div>
+                <div class="education-logo-container">
+                    <img class="education-logo" src="DATA/LOGO/cbselogo.png">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="education-end">
+        <div class="education-end-left"></div>
+        <div class="education-end-right"></div>
+    </div>
+
+    <div class="education-section-bg">
+    </div>
+    
+</section>
+
+<!--EDUCATION-SECTION-ENDS-->
+
+
+<!------PROJECTS-SECTION------>
+
+<section class="projects-section section" id="projects">
+
+    <div class="projects-section-bg">
+
+    </div>
+
+    <div class="hero-projects-section">
+
+        <div class="hero-projects-section-heading  hero-section-heading">
+            PROJECTS
+        </div>
+        <div class="hero-projects-section-underline underline"></div>
+        <div class="hero-projects-section-paragraph hero-section-paragraph">
+            A showcase of the projects I have worked on, highlighting my skills and experience in various technologies
+        </div>
+        
+        
+        <div class="projects-container">
+
+            <div class="projects-container-child" onclick="openPopup(this)"  >
+
+                <div class="projects-container-child-image-container">
+                    <img class="projects-container-child-image" src="DATA/PROJECTS/projects-portfolio.png">
+                </div>
+
+                <div class="projects-container-child-head">
+
+                    <div class="projects-container-child-head-heading">
+                        PORTFOLIO WEBSITE
+                    </div>
+
+                    <div class="projects-container-child-head-bio">
+                        This project is a personal portfolio website created using HTML, CSS, and JavaScript. It showcases key information about me, including an "About Me" section, my technical skills, educational background, a detailed overview of my projects, and my certifications. The goal of this portfolio is to provide a clear and organized presentation of my professional journey and capabilities.
+                    </div>
+
+                    <div class= "projects-container-child-head-lang-container">
+
+                        <div class= "projects-container-child-head-lang">
+                            HTML
+                        </div>
+                        <div class= "projects-container-child-head-lang">
+                            CSS
+                        </div>
+                        <div class= "projects-container-child-head-lang">
+                            JavaScript
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="popup-buttons-container">
+                    <div class="popup-buttons-container-child">
+                        <div class="popup-buttons">
+                            <a href="https://milanmirg.github.io/PORTFOLIOADM/" target="_blank" rel="noopener noreferrer">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="projects-container-child" onclick="openPopup(this)" >
+
+                <div class="projects-container-child-image-container">
+                    <img class="projects-container-child-image" src="DATA/PROJECTS/projects-amazon.png">
+                </div>
+
+                <div class="projects-container-child-head">
+
+                    <div class="projects-container-child-head-heading">
+                        AMAZON CLONE
+                    </div>
+
+                    <div class="projects-container-child-head-bio">
+                        This project is a static frontend clone of the Amazon e-commerce website, developed using only HTML and CSS. It replicates the visual layout and design of key Amazon pages, including the homepage, product listings, header with logo and search bar, navigation menu, and footer. The focus of this project is on mastering responsive web design, layout structuring using Flexbox and Grid, and creating a visually accurate and clean interface that mimics a real-world e-commerce platform—all without any JavaScript or backend integration.                   
+                     </div>
+
+                    <div class= "projects-container-child-head-lang-container">
+
+                        <div class= "projects-container-child-head-lang">
+                            HTML
+                        </div>
+                        <div class= "projects-container-child-head-lang">
+                            CSS
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <div class="popup-buttons-container">
+                    <div class="popup-buttons-container-child">
+                        <div class="popup-buttons">
+                            <a href="https://github.com/MILANMIRG/AMAZON" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </div>
+                    </div>
+                    <div class="popup-buttons-container-child">
+                        <div class="popup-buttons">
+                            <a href="https://milanmirg.github.io/AMAZON/" target="_blank" rel="noopener noreferrer">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="projects-container-child" onclick="openPopup(this)" >
+
+                <div class="projects-container-child-image-container">
+                    <img class="projects-container-child-image" src="DATA/PROJECTS/projects-resume.png">
+                </div>
+
+                <div class="projects-container-child-head">
+
+                    <div class="projects-container-child-head-heading">
+                        RESUME
+                    </div>
+
+                    <div class="projects-container-child-head-bio">
+                        I am a passionate and detail-oriented frontend developer with a strong foundation in HTML and CSS. I specialize in creating clean, responsive, and user-friendly interfaces. I recently built an Amazon Clone frontend project to sharpen my skills in replicating real-world layouts. With a background in Computer Science and a deep interest in web design, I continuously strive to improve user experience through well-structured and visually appealing designs.                    
+                    </div>
+
+                    <div class= "projects-container-child-head-lang-container">
+
+                        <div class= "projects-container-child-head-lang">
+                            HTML
+                        </div>
+                        <div class= "projects-container-child-head-lang">
+                            CSS
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="popup-buttons-container">
+                    <div class="popup-buttons-container-child">
+                        <div class="popup-buttons">
+                            <a href="https://github.com/MILANMIRG/RESUME" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </div>
+                    </div>
+                    <div class="popup-buttons-container-child">
+                        <div class="popup-buttons">
+                            <a href="https://milanmirg.github.io/RESUME/" target="_blank" rel="noopener noreferrer">View Live</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="projects-container-child" onclick="openPopup(this)" >
+
+                <div class="projects-container-child-image-container">
+                    <img class="projects-container-child-image" alt="Not Uploaded Yet" src="">
+                </div>
+
+                <div class="projects-container-child-head">
+
+                    <div class="projects-container-child-head-heading">
+                        Upcomming Projects
+                    </div>
+
+                    <div class="projects-container-child-head-bio">
+                           
+                    </div>
+
+                    <div class= "projects-container-child-head-lang-container">
+
+                        <div class= "projects-container-child-head-lang">
+                            
+                        </div>
+                        <div class= "projects-container-child-head-lang">
+                            
+                        </div>
+                        <div class= "projects-container-child-head-lang">
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="popup-buttons-container">
+                        <div class="popup-buttons-container-child">
+                            <div class="popup-buttons">
+                                <a>View Code</a>
+                            </div>
+                        </div>
+                        <div class="popup-buttons-container-child">
+                            <div class="popup-buttons">
+                                <a>View Live</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+            </div>
+        
+
+        </div>
+        
+    </div>
+
+    <div class="education-end">
+        <div class="education-end-left"></div>
+        <div class="education-end-right"></div>
+    </div>
+    
+
+</section>
+<!----PROJECTS-SECTION-ENDS---->
+
+<!------CERTIFICATES-SECTION------>
+
+<section class="certificates-section section" id="certificates">
+
+    <div class="certificates-section-bg">
+        
+    </div>
+
+    <div class="hero-certificates-section">
+
+        <div class="hero-certificates-section-heading  hero-section-heading">
+            CERTIFICATES
+        </div>
+        <div class="hero-certificates-section-underline underline"></div>
+        <div class="hero-certificates-section-paragraph hero-section-paragraph">
+            Here is my showcase of certificates that highlight the skills and knowledge I’ve gained through various learning platforms and educational milestones.
+        </div>
+
+        <div class="certificates-container">
+
+
+            <div class="certificates-container-child"  onclick="window.open('https://www.udemy.com/certificate/UC-62466fcb-32ef-4568-bb55-48ca0c5506ce/', '_blank')">
+
+                <div class="certificates-container-child-image-container">
+                    <img class="certificates-container-child-image" src="DATA/CERTIFICATES/Spokenenglish.jpg">
+                </div>
+
+                <div class="certificates-container-child-head">
+                    <div class="certificates-container-child-head-heading">
+                        Spoken English Crash Course
+                    </div>
+                    <div class="certificates-container-child-head-date">
+                        Completed on: 02-Sep-2025
+                    </div>
+                    <div class="certificates-container-child-head-site">
+                        Offered by: Udemy
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="certificates-container-child" onclick="window.open('https://simpli-web.app.link/e/kK6UvK6m5Sb', '_blank')">
+
+                <div class="certificates-container-child-image-container">
+                    <div class="certificates-container-child-image">
+                        <img class="certificates-container-child-image" src="DATA/CERTIFICATES/frontend.png">
+                    </div>
+                </div>
+
+                <div class="certificates-container-child-head">
+                    <div class="certificates-container-child-head-heading">
+                        INTRODUCTION  TO FRONT END DEVELOPMENT
+                    </div>
+                    <div class="certificates-container-child-head-date">
+                        Completed on: 03-May-2024
+                    </div>
+                    <div class="certificates-container-child-head-site">
+                        Offered by: Simplilearn
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="certificates-container-child" onclick="window.open('https://www.skillected.com/share-certificate?serialno=ULOQ775O', '_blank')">
+
+                <div class="certificates-container-child-image-container"> 
+                    <img class="certificates-container-child-image" src="DATA/CERTIFICATES/HTMLCSS90MIN.png">
+                </div>
+
+                <div class="certificates-container-child-head">
+                    <div class="certificates-container-child-head-heading">
+                        HTML & CSS 90 MINUTES BOOTCAMP
+                    </div>
+                    <div class="certificates-container-child-head-date">
+                        Completed on: 23-Oct-2024
+                    </div>
+                    <div class="certificates-container-child-head-site">
+                        Offered by: SkillEcted
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="education-end">
+        <div class="education-end-left"></div>
+        <div class="education-end-right"></div>
+    </div>
+
+</section>
+
+<!----CERTIFICATES-SECTION-ENDS---->
+
+</body>
+</html>
