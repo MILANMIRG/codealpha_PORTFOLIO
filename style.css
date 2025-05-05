@@ -1117,14 +1117,13 @@ margin-left: auto;
 }
 .contact-logo{
     font-size: 2rem;
-    border: #6B7280 1px solid;
     padding: 0.5rem;
     border-radius: 10px;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 .contact-logo:hover{
-    transform: scale(1.1);
+    transform: translateY(-3px);
 }
 
 .copyright{
