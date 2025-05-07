@@ -32,9 +32,9 @@ You can view the live version here:
 
 ---
 
-## 📷 Demo
+## 📷 PREVIEW
 
-![Portfolio Demo](https://github.com/MILANMIRG/PORTFOLIO/blob/main/DATA/display.gif?raw=true)
+![Portfolio Preview](https://github.com/MILANMIRG/PORTFOLIO/blob/main/DATA/display.gif?raw=true)
 
 ---
 
