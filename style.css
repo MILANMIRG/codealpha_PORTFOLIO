@@ -1124,6 +1124,7 @@ margin-left: auto;
 }
 .contact-logo:hover{
     transform: translateY(-3px);
+    color: white;
 }
 
 .copyright{
